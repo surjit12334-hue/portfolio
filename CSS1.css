@@ -126,9 +126,120 @@ footer p {
   font-size: 0.95rem;
 }
 
-footer p:first-child {
+.timeline {
+  list-style: none;
+  padding: 0;
+}
+
+.timeline li {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 3px solid #7b2ff7;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.timeline li:hover {
+  transform: translateX(8px);
+}
+
+.timeline h3 {
   color: #00d4ff;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.timeline .meta {
+  color: #7b2ff7;
   font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.timeline p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill {
+  background: linear-gradient(90deg, #00d4ff, #7b2ff7);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(123, 47, 247, 0.4);
+}
+
+.current-stage p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ccc;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hobby-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.hobby-list li {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 14px 18px;
+  border-radius: 10px;
+  color: #ccc;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hobby-list li::before {
+  content: "⚡ ";
+  color: #00d4ff;
+}
+
+.hobby-list li:hover {
+  background: rgba(0, 212, 255, 0.15);
+  color: #fff;
+}
+
+footer h2 {
+  text-align: center;
+  border: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+footer p {
+  margin: 8px 0;
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+footer .credit {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #666;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 15px;
 }
 
 @media (max-width: 600px) {
